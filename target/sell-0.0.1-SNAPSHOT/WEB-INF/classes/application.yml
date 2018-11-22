@@ -1,0 +1,18 @@
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+##  path: C:\Program Files\apache-tomcat-8.5.12\logs\logback
+#  file: C:\Program Files\apache-tomcat-8.5.12\logs\enums.log
+#  level:
+#   com.imooc.emumss.*: debug
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: mmall
+    password: mmall
+    url: jdbc:mysql://192.168.25.7:3306/sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+server:
+  servlet:
+    context-path: /sell
